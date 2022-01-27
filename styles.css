@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(226, 229, 215);
+  height: fit-content;
+}
+
+.header {
+  margin-top: 10vh;
+  position: relative;
+}
+
+.homeJJ {
+  width: 100%;
+  height: auto;
+  margin-bottom: 23vh;
+}
+
+.sig {
+  height: auto;
+  width: 8vw;
+  margin: 2vw;
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  font-family: 'Waterfall', cursive;
+  font-size: 10vw;
+  font-weight: 700;
+  width: fit-content;
+  text-shadow: 2px 5px 2.25px rgba(226, 229, 215, 0.497);
+  box-shadow: 0px 0px 38px 9px rgba(0, 0, 0, 0.71);
+  background-color: rgba(226, 229, 215, 0.394);
+  padding: 2vh;
+}
+
+menu {
+  margin-right: 2vw;
+}
+
+a {
+  float: right;
+  margin-top: 2vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+a > li {
+  display: inline;
+  flex: none;
+  font-family: 'Arvo', serif;
+  padding: 1.5vw 3vw 1.5vw 3vw;
+  font-size: 1.5vw;
+}
+
+li:hover {
+  color: rgb(80, 57, 62);
+  box-shadow: inset 0px 0px 4.5px rgba(80, 57, 62, 0.915);
+  font-weight: 900;
+  background-color: rgba(226, 229, 215, 0.85);
+}
+
+.med {
+  border-left: 1px solid rgba(0, 0, 0, 0.175);
+  border-right: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+footer {
+  color: rgb(124, 126, 117);
+  text-align: center;
+  font-size: 1.25vw;
+  margin-bottom: 2vh;
+}
