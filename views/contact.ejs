@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,52 +16,33 @@
       href="https://fonts.googleapis.com/css2?family=Allura&family=Waterfall&display=swap"
       rel="stylesheet"
     />
-    <title>Emma Sáenz</title>
+    <title>Contact</title>
   </head>
   <body>
     <menu>
       <ul>
-        <a href="/contact.html">
-          <li>Contact</li>
-        </a>
-        <a href="/contact.html">
-          <li class="med">Mediums</li>
-        </a>
-        <a href="/contact.html">
+        <a href="/">
           <li>About</li>
         </a>
-        <a href="/index.html">
+        <a href="/">
+          <li class="med">Mediums</li>
+        </a>
+        <a href="/">
           <li>Home</li>
         </a>
       </ul>
+      <main>
+        <p>Contact Me</p>
+        <form action="contactform.php" method="post">
+          <input type="text" name="name" placeholder="Full Name">
+          <input type="text" name="mail" placeholder="Your Email">
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" placeholder="Message" rows="10"></textarea>
+          <button type="submit" name="submit">Send</button>
+        </form>
+      </main>
     </menu>
-    <header>
-      <img class="sig" src="img/tempSig.jpg" alt="signature" />
-      <div class="header">
-        <img class="homeJJ" src="img/homeJack.png" alt="Jean Jacket" />
-        <h1>Emma Tasset Sáenz</h1>
-      </div>
-    </header>
-    <main class="home">
-      <div>
-        <img src="img/mask.png" alt="Mask" />
-      </div>
-      <div>
-        <img src="img/cuban.png" alt="Cuban" />
-      </div>
-      <div>
-        <img src="img/skull.png" alt="Skull" />
-      </div>
-      <div>
-        <img src="img/hands.png" alt="Hands" />
-      </div>
-      <div>
-        <img src="img/tiger.png" alt="Tiger" />
-      </div>
-      <div>
-        <img src="img/chief.png" alt="Chief" />
-      </div>
-    </main>
+    <img class="sig" src="img/tempSig.jpg" alt="signature" />
     <footer>
       <h4>© 2022 Copyright</h4>
       <h5>Created By: Reagan Roberts</h5>
