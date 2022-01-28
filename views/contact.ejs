@@ -33,16 +33,19 @@
       </ul>
       <main>
         <p>Contact Me</p>
-        <form action="contactform.php" method="post">
-          <input type="text" name="name" placeholder="Full Name">
-          <input type="text" name="mail" placeholder="Your Email">
-          <input type="text" name="subject" placeholder="Subject">
-          <textarea name="message" placeholder="Message" rows="10"></textarea>
-          <button type="submit" name="submit">Send</button>
-        </form>
+        <div class="form-container">
+          <form class="contact-form">
+            <input type="text" id="name" placeholder="Full Name" />
+            <input type="email" id="email" placeholder="Your Email" />
+            <input type="text" id="subject" placeholder="Subject" />
+            <textarea id="message" placeholder="Message" rows="10"></textarea>
+            <input type="submit" class="submit" value="Send Message">
+            </input>
+          </form>
+        </div>
       </main>
     </menu>
-    <img class="sig" src="img/tempSig.jpg" alt="signature" />
+    <img class="sig" src="img/tempSig.png" alt="signature" />
     <footer>
       <h4>© 2022 Copyright</h4>
       <h5>Created By: Reagan Roberts</h5>
