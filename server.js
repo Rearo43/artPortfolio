@@ -4,11 +4,8 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 3006;
 
-// const { info } = require('console');
 const express = require('express');
 const morgan = require('morgan');
-// const sendG = require('@sendgrid/mail');
-// const nodemailer = require('nodemailer');
 
 const app = express();
 
@@ -25,7 +22,6 @@ app.get('/', home);
 app.get('/contact', contact);
 
 app.post('/contactForm', contactForm);
-// app.post('/contact', contactForm);
 
 app.use('*', routeNotFound);
 app.use(bigError);
