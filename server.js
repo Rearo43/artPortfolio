@@ -4,10 +4,8 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 3006;
 
-const { info } = require('console');
 const express = require('express');
 const morgan = require('morgan');
-const nodemailer = require('nodemailer');
 
 const app = express();
 
@@ -23,7 +21,7 @@ app.get('/', home);
 // app.get('/mediums', mediums);
 app.get('/contact', contact);
 
-app.post('/contact', contactForm);
+app.post('/contactForm', contactForm);
 
 app.use('*', routeNotFound);
 app.use(bigError);
@@ -44,41 +42,20 @@ function home(req, res) {
 // }
 
 function contact(req, res) {
-  res
-    .status(200)
-    .render('contact')
+  res.status(200).render('contact');
 }
 
 function contactForm(req, res) {
-  console.log(req.body);
+  let sender = require('./sendgrid');
 
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        xoauth2: xoauth2.createXOAuth2Generator({
-            user: 'rrobertscs@gmail.com',
-            clientId: 'process.env.CLIENT_ID',
-            clientSecret: 'process.env.SECRET',
-            refreshToken: ''
-        })
-    },
-  });
+  let person = req.body.person;
+  let email = req.body.email;
+  let subject = req.body.subject;
+  let message = req.body.message;
 
-  const mailOptions = {
-    from: req.body.email,
-    to: 'rrobertscs@gmail.com',
-    subject: `Message from ${req.body.email}: ${req.body.subject}`,
-    text: req.body.message,
-  };
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-      res.send('error');
-    } else {
-      console.log(`Email sent: ${info.response}`);
-      res.send('success');
-    }
-  });
+  sender.sendEmail(person, email, subject, message);
+
+  res.status(200).redirect('contact');
 }
 
 //----------404 Error
