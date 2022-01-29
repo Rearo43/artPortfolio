@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,14 +34,13 @@
       </ul>
       <main>
         <p>Contact Me</p>
-        <div class="form-container">
-          <form class="contact-form">
-            <input type="text" id="name" placeholder="Full Name" />
-            <input type="email" id="email" placeholder="Your Email" />
-            <input type="text" id="subject" placeholder="Subject" />
-            <textarea id="message" placeholder="Message" rows="10"></textarea>
-            <input type="submit" class="submit" value="Send Message">
-            </input>
+        <div>
+          <form action="/contactForm" method="post">
+            <input type="text" name="person" placeholder="Full Name" />
+            <input type="email" name="email" placeholder="Your Email" />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Message" rows="10"></textarea>
+            <button type="submit" value="Send Message">Send</button>
           </form>
         </div>
       </main>
@@ -48,7 +48,6 @@
     <img class="sig" src="img/tempSig.png" alt="signature" />
     <footer>
       <h4>Copyright © 2022 Reagan Roberts. All Rights Reserved</h4>
-      <!-- <h5>Created By: Reagan Roberts</h5> -->
       <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
