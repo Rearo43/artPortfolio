@@ -57,7 +57,7 @@
 
   .homeJJ {
     width: 80vw;
-    margin-bottom: 60px;
+    /* margin-bottom: 30px; */
     margin-top: 3vh;
     margin-left: 20vw;
   }
@@ -98,10 +98,9 @@
   footer {
     color: rgb(124, 126, 117);
     text-align: center;
-    font-size: 1.25vw;
+    font-size: 2.5vw;
     margin-bottom: 3vh;
-    margin-left: 52%;
-    width: fit-content;
+    width: 124%;
     margin-top: 2vh;
   }
 }
