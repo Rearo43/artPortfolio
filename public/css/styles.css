@@ -1,99 +1,116 @@
-@media (min-width: 600.1px) {
-  body {
-    background-color: rgb(226, 229, 215);
-    width: 80vw;
-    margin: auto;
-    margin-top: 5%;
-  }
-
-  .homeJJ {
-    width: 80vw;
-    margin-bottom: 60px;
-    margin-top: 7vh;
-  }
-
-  .sig {
-    height: auto;
-    width: 8vw;
-    margin: 2vw 0 0 -5vw;
-  }
-
-  header {
-    margin-top: 5px;
-  }
-
-  menu {
-    margin-right: -5vw;
-  }
-
-  h1 {
-    position: absolute;
-    top: 40vw;
-    font-family: 'Waterfall', cursive;
-    font-size: 10vw;
-    font-weight: 700;
-    width: 77vw;
-    text-shadow: 4px 5px 2px rgba(226, 229, 215, 0.497);
-    box-shadow: 0px 0px 38px 9px rgba(0, 0, 0, 0.71);
-    background-color: rgba(226, 229, 215, 0.394);
-    padding: 1.5vw;
-    text-align: center;
-  }
-
-  a {
-    float: right;
-    margin-top: 2vw;
-    margin-left: 1vw;
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
-    background-color: rgba(255, 255, 255, 0.3); */
-    background: #e2e5d7;
-    box-shadow: inset -5px 5px 12px #c5c7bb, inset 5px -5px 12px #fffff3;
-    display: flex;
-    text-decoration: none;
-    color: black;
-  }
-
-  a > li {
-    display: inline;
-    flex: none;
-    font-family: 'Arvo', serif;
-    padding: 1.5vw 3vw 1.5vw 3vw;
-    font-size: 1.5vw;
-  }
-
-  li:hover,
-  li:active {
-    color: rgb(80, 57, 62);
-    font-weight: 900;
-    /* box-shadow: inset 0px 0px 4.5px rgba(80, 57, 62, 0.915);
-    background-color: rgba(226, 229, 215, 0.85); */
-    background: #e2e5d7;
-    box-shadow: -5px 5px 12px #c5c7bb, 5px -5px 12px #fffff3;
-  }
-
-  .home {
-    max-width: 80vw;
-    min-width: 80vw;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .home > div {
-    margin: auto;
-  }
-
-  .home > div > img {
-    width: 20vw;
-    height: auto;
-    margin: 0.1vw;
-  }
-
-  footer {
-    color: rgb(124, 126, 117);
-    text-align: center;
-    font-size: 1.5vw;
-    margin: auto;
-    margin-bottom: 3vh;
-    margin-top: 2vh;
-  }
+/* ---------- HOME---------- */
+.home {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.home > div {
+  margin: auto;
+  margin-top: 3vh;
+}
+
+.home > div > img {
+  margin: 0.1vw;
+  width: 20vw;
+}
+
+/* ---------- PORTFOLIO---------- */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5vw;
+}
+
+.portfolio > span {
+  flex-grow: 1;
+  margin-bottom: 2vw;
+  margin-left: 1vw;
+}
+
+.portfolio > span > img {
+  max-width: 275px;
+}
+
+/* ---------- CONTACT---------- */
+.social {
+  text-align: center;
+}
+
+.socialLink {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+}
+
+.socialLink > div > a {
+  color: black;
+  margin-top: 2vw;
+  text-decoration: none;
+}
+
+.socialLink > div:nth-child(2) > a {
+  margin: 2vw;
+}
+
+.socialLink > div > a:hover {
+  color: rgba(0, 0, 0, 0.449);
+}
+
+/* ---------- CONTACT: FORM---------- */
+form {
+  margin: auto;
+  width: fit-content;
+  background: #e2e5d7;
+  box-shadow: inset -5px 5px 12px #c5c7bb, inset 5px -5px 12px #fffff3;
+}
+
+input {
+  font-size: 1.5vw;
+  line-height: 5vw;
+  text-align: center;
+}
+
+textarea {
+  font-size: 1.5vw;
+  margin-left: 5%;
+  width: 90%;
+}
+
+input,
+textarea {
+  background-color: rgba(251, 251, 251, 0);
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.202);
+  font-family: 'Arvo', serif;
+  margin-bottom: 1vw;
+  outline: none;
+  text-decoration: none;
+}
+
+.name,
+.email {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.subject,
+.company {
+  margin-left: 9%;
+  width: 35%;
+}
+
+button {
+  background: #e2e5d7;
+  border: none;
+  box-shadow: -5px 5px 12px #c5c7bb, 5px -5px 12px #fffff3;
+  font-size: 1.5vw;
+  line-height: 3vw;
+  margin: 15% 0 5% 7.5vw;
+  width: 20vw;
+}
+
+button:hover {
+  background: #e2e5d7;
+  box-shadow: inset -5px 5px 12px #c5c7bb, inset 5px -5px 12px #fffff3;
+}
+/* Above checked */
