@@ -87,6 +87,7 @@ textarea {
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.202);
   font-family: 'Arvo', serif;
+  font-size: 2vw;
   margin-bottom: 1vw;
   outline: none;
   text-decoration: none;
