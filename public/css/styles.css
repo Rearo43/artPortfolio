@@ -1,15 +1,17 @@
 /* ---------- HOME---------- */
 .home {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.home > div {
+.home > span {
   margin: auto;
   margin-top: 3vh;
 }
 
-.home > div > img {
+.home > span > img {
   margin: 0.1vw;
   width: 20vw;
 }
@@ -17,6 +19,8 @@
 /* ---------- PORTFOLIO---------- */
 .portfolio {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 5vw;
 }
