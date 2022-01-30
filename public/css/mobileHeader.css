@@ -45,12 +45,12 @@
     flex-wrap: wrap;
   }
 
-  .home > div {
+  .home > span {
     margin: auto;
     margin-top: 0vh;
   }
 
-  .home > div > img {
+  .home > span > img {
     margin: 0.1vw;
     width: 40vw;
   }
@@ -93,10 +93,21 @@
     box-shadow: 0 0 0;
     width: 90%;
   }
+  input,
+  textarea,
+  button {
+    font-size: 3vw;
+  }
 
   textarea {
     margin-top: 2vh;
     width: 90%;
+  }
+
+  button {
+    font-size: 3vw;
+    width: 30vw;
+    height: 6vw;
   }
 
   button:active {
