@@ -71,6 +71,7 @@ input {
 }
 
 textarea {
+  color: rgba(0, 0, 0, 0.798);
   font-size: 1.5vw;
   margin-left: 5%;
   width: 90%;
@@ -78,7 +79,7 @@ textarea {
 
 input,
 textarea {
-  background-color: rgba(251, 251, 251, 0);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.202);
   font-family: 'Arvo', serif;
@@ -103,10 +104,12 @@ button {
   background: #e2e5d7;
   border: none;
   box-shadow: -5px 5px 12px #c5c7bb, 5px -5px 12px #fffff3;
+  font-family: 'Arvo', serif;
   font-size: 1.5vw;
   line-height: 3vw;
   margin: 15% 0 5% 7.5vw;
   width: 20vw;
+  color: rgba(0, 0, 0, 0.798);
 }
 
 button:hover {
