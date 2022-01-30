@@ -9,10 +9,10 @@ sendG.setApiKey(API_KEY);
 
 const sendEmail = (person, email, subject, message) => {
   const msg = {
-    to: email,
+    to: 'rrobertscs@gmail.com',
     from: 'rrobertscs@gmail.com',
     subject: `Portfolio Message: ${subject}`,
-    text: `Name: ${person} \n\n Message: ${message}`,
+    text: `Name: ${person} \n\n Email: ${email} \n\n Message: ${message}`,
   };
 
   sendG

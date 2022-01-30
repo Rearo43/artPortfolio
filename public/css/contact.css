@@ -1,11 +1,22 @@
-main {
-  /* border: 2px solid black; */
+body {
+  /* width: 75vw; */
 }
 
+main{
+  width: 100%;
+}
 form {
-  /* margin: auto; */
+  margin-left: 25%;
   width: fit-content;
-  float: right;
+  /* float: right; */
+  background: #e2e5d7;
+  box-shadow: inset -5px 5px 12px #c5c7bb, inset 5px -5px 12px #fffff3;
+}
+
+.contact {
+  width: 100%;
+  height: fit-content;
+  margin-left: 1vw;
 }
 
 input,
@@ -37,11 +48,6 @@ textarea {
   margin-left: 9%;
 }
 
-form {
-  background: #e2e5d7;
-  box-shadow: inset -5px 5px 12px #c5c7bb, inset 5px -5px 12px #fffff3;
-}
-
 textarea {
   width: 90%;
   margin-left: 5%;
@@ -65,33 +71,45 @@ button:hover {
 }
 
 .social {
-  width: 40%;
-  height: 50vh;
+  width: 100%;
+  height: 10vh;
+  /* margin-left: 35%; */
+  margin-bottom: 7vw;
+    margin-left: 26%;
 }
 
 .social > div {
-  margin: 10%;
+  margin: 5%;
   font-size: 3.5vw;
   text-align: center;
   font-family: 'Arvo', serif;
   font-weight: 700;
+  display: inline;
+  margin-bottom: 30vw;
 }
 
-i {
-  /* margin-top: 1vw; */
-  color: rgba(0, 0, 0, 0.613);
-  font-size: 4x;
-}
-.social > div > a{
+.social > div > a {
   background-color: #c5c7bb00;
   box-shadow: none;
   float: none;
 }
 
-footer{
-  margin-top: 40%;
+footer {
+  margin-top: 70vh;
 }
 
-.fab:hover{
+.fab:hover {
   color: rgba(0, 0, 0, 0.449);
+}
+
+/* .card {
+  display: inline-block;
+  margin-right: 1vw;
+} */
+
+p {
+  font-family: 'Arvo', serif;
+  width: 90%;
+  text-align: center;
+  font-size: 2vw;
 }
