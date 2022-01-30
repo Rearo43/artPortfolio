@@ -1,0 +1,46 @@
+@media (min-width: 800.1px) {
+  main {
+    width: 100%;
+    margin-top: 5vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  span > img {
+    height: auto;
+    max-width: 300px;
+  }
+
+  span {
+    flex-grow: 1;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+  }
+}
+
+@media (max-width: 800px) {
+    body{
+        width: 100vw;
+    }
+  main {
+    width: 100%;
+    margin-top: 5vw;
+    /* border: 2px solid black; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* border: 2px solid black; */
+    margin-left: 10vw;
+  }
+  span > img {
+    height: auto;
+    width: 100%;
+  }
+
+  span {
+    flex-grow: 1;
+    margin-bottom: 2vw;
+    width: 100%;
+    /* margin-left: 44%; */
+  }
+}
