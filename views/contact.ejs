@@ -41,7 +41,7 @@
       <img class="sig" src="img/tempSig.png" alt="signature" />
     </menu>
     <article class="social">
-      <p>Follow me on:</p>
+      <!-- <p>Follow me on:</p> -->
       <div class="socialLink">
         <div>
           <a
@@ -64,18 +64,21 @@
       <div class="card">
         <form action="/contactForm" method="post">
           <input
+            required
             type="name"
             name="person"
             class="name"
             placeholder="Full Name"
           /><br />
           <input
+            required
             type="email"
             name="email"
             class="email"
             placeholder="Your Email"
           /><br />
           <input
+            required
             type="text"
             name="subject"
             class="subject"
@@ -88,6 +91,7 @@
             placeholder="Company"
           /><br />
           <textarea
+            required
             name="message"
             class="message"
             placeholder="Message"
