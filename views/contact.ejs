@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/mobileHeader.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Contact</title>
+    <link rel="icon" href="img/tempSig.png" type="image/png" />
   </head>
   <body>
     <menu>
@@ -30,8 +31,8 @@
         <a href="/">
           <li>About</li>
         </a>
-        <a href="/">
-          <li class="med">Mediums</li>
+        <a href="/portfolio">
+          <li>Portfolio</li>
         </a>
         <a href="/">
           <li>Home</li>
@@ -39,8 +40,28 @@
       </ul>
       <img class="sig" src="img/tempSig.png" alt="signature" />
     </menu>
+    <article class="social">
+      <p>Follow me on:</p>
+      <div class="socialLink">
+        <div>
+          <a
+            href="https://www.instagram.com/emmatassetsaenz/"
+            class="fab fa-instagram fa-2x"
+          ></a>
+        </div>
+        <div>
+          <a
+            href="https://www.tiktok.com/@etsaenz"
+            class="fab fa-tiktok fa-2x"
+          ></a>
+        </div>
+        <div>
+          <a class="fab fa-discord fa-2x"></a>
+        </div>
+      </div>
+    </article>
     <main class="contact">
-      <div>
+      <div class="card">
         <form action="/contactForm" method="post">
           <input
             type="name"
@@ -75,20 +96,6 @@
           ><br />
           <button type="submit" value="Send Message">Send</button>
         </form>
-      </div>
-      <div class="social">
-        <div>
-          <h2>Instagram</h2>
-          <a href="https://www.instagram.com/emmatassetsaenz/" class="fab fa-instagram fa-2x"></a>
-        </div>
-        <div>
-          <h2>TicTok</h2>
-          <a href="https://www.tiktok.com/@etsaenz" class="fab fa-tiktok fa-2x"></a>
-        </div>
-        <div>
-          <h2>Discord</h2>
-          <a class="fab fa-discord fa-2x"></a>
-        </div>
       </div>
     </main>
     <footer>

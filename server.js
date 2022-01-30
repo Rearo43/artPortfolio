@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', home);
 // app.get('/about', about);
-// app.get('/mediums', mediums);
+app.get('/portfolio', portfolio);
 app.get('/contact', contact);
 
 app.post('/contactForm', contactForm);
@@ -37,9 +37,9 @@ function home(req, res) {
 //   res.render('pages/index').catch((err) => console.log(err));
 // }
 
-// function mediums(req, res) {
-//   res.render('pages/index').catch((err) => console.log(err));
-// }
+function portfolio(req, res) {
+  res.render('portfolio').catch((err) => console.log(err));
+}
 
 function contact(req, res) {
   res.status(200).render('contact');

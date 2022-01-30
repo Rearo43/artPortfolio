@@ -1,0 +1,107 @@
+@media (max-width: 600px) {
+  /* ---------- HEADER---------- */
+  body {
+    margin: 0;
+    width: 100vw;
+  }
+
+  menu {
+    margin-right: 0;
+  }
+
+  menu > ul > a {
+    float: none;
+    font-size: 3vw;
+    line-height: 35px;
+    margin: 0;
+    text-align: center;
+  }
+
+  a > li {
+    margin: auto;
+    padding: 1.5vw 3vw 1.5vw 3vw;
+    width: 100%;
+  }
+
+  .sig {
+    margin: 3vh 0 0.5vh 46%;
+  }
+
+  /* ---------- HOME---------- */
+  .homeH > div > img {
+    margin-left: 4%;
+    margin-top: 7vh;
+    width: 92%;
+  }
+  h1 {
+    position: relative;
+    left: 4vw;
+    top: -30vw;
+    width: 89%;
+  }
+
+  .home {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .home > div {
+    margin: auto;
+    margin-top: 0vh;
+  }
+
+  .home > div > img {
+    margin: 0.1vw;
+    width: 40vw;
+  }
+
+  /* ---------- PORTFOLIO---------- */
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vw;
+  }
+
+  .portfolio > span {
+    flex-grow: 1;
+    margin-bottom: 2vw;
+    margin-left: 2.5vw;
+  }
+
+  .portfolio > span > img {
+    margin-left: 10%;
+    max-width: 600px;
+    width: 80%;
+  }
+
+  /* ---------- CONTACT---------- */
+  .social > p {
+    font-size: 4vw;
+  }
+
+  .socialLink > div > a {
+    font-size: 5vw !important;
+  }
+
+  .socialLink > div > a:active {
+    color: rgba(0, 0, 0, 0.449);
+  }
+
+  /* ---------- CONTACT: FORM---------- */
+  form {
+    background: none;
+    box-shadow: 0 0 0;
+    width: 90%;
+  }
+
+  textarea {
+    margin-top: 2vh;
+    width: 90%;
+  }
+
+  button:active {
+    background: #e2e5d7;
+    box-shadow: inset -5px 5px 12px #c5c7bb, inset 5px -5px 12px #fffff3;
+  }
+}
+/* Above checked */
